@@ -1,1 +1,149 @@
+ #mbwnavbar {
+    background:rgba(66, 197, 190, 1);
+    color: #000000;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    top:-7px;
+   left:-8px;
+   right:-8px;
+    border-top:0px solid #transparent;
+    height:50px;
+}
+#mbwnav {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    display: table;
+}
+#mbwnav ul {
+    float: none;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+#mbwnav li {
+    list-style: none;
+    margin-left:50px;
+    padding: 0;
+    display:inline-block;
+    border-left:0px solid #333;
+    border-right:0px solid #333;
+    height: 35px;
+}
+#mbwnav li a, #mbwnav li a:link, #mbwnav li a:visited {
+    color: #fff;
+    display: inline-block;
+    font:normal 18px Times, sans-serif;
+    margin: 0;
+    margin-top:5px;
+    text-align: left;
+    padding: 9px 12px 10px 12px;
+    text-decoration: none;
+}
+#mbwnav li a:hover, #mbwnav li a:active {
+    border-bottom:2px solid black;
+    color: #fdeae9;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 9px 12px 10px 12px;
+}
 
+#mbwnav li ul {
+    z-index: 9999;
+    position: absolute;
+    left: -999em;
+    height: auto;
+    width: 100px;
+    margin: 0 auto;
+    padding: 0;
+}
+#mbwnav li ul a {
+    width: 100px;
+}
+#mbwnav li ul ul {
+    margin: -25px 0 0 10px;
+}
+#mbwnav li:hover ul ul, #mbwnav li:hover ul ul ul, #mbwnav li.sfhover ul ul, #mbwnav li.sfhover ul ul ul {
+    left: -999em;
+}
+#mbwnav li:hover ul, #mbwnav li li:hover ul, #mbwnav li li li:hover ul, #mbwnav li.sfhover ul, #mbwnav li li.sfhover ul, #mbwnav li li li.sfhover ul {
+    left: auto;
+    right:auto;
+}
+#mbwnav li:hover, #mbwnav li.sfhover {
+    position: static;
+}
+#mbwnav li li a, #mbwnav li li a:link, #mbwnav li li a:visited {
+    background: #ffffff;
+    width: 120px;
+    color: #000000;
+    display: inline-block;
+    font:normal 20px Times, sans-serif;
+    margin: 0 auto;
+    padding: 9px 12px 10px 12px;
+    text-decoration: none;
+    z-index:9999;
+    border-bottom:0px dotted #333;
+}
+#mbwnav li li a:hover, #mbwnavli li a:active {
+    background: #444;
+    color: #fdeae9;
+    display: block;
+    margin: 0 auto;
+    padding: 9px 12px 10px 12px;
+    text-decoration: none;
+}
+#mainimg {
+  max-width:60%; 
+  display:block;
+  margin-right:auto;
+  margin-left:auto;
+}
+#insta {
+  border-radius:5%;
+  margin-top:3px;
+}
+.logo {
+  height:40px;
+  width:40px;
+  display:inline-block;
+  justify-content:space-between;
+  border:none;
+  border-radius:100%;
+  position:relative;
+  bottom:15px;
+  left:45%;
+  margin-left:10px;
+  margin-right:10px;
+  
+}
+.logo:hover {
+  
+}
+.socialbar {
+  width:100%;
+  border:2px solid white;
+  height:50px;
+  margin:25px 0px 25px 0px;
+  background-color:rgba(66, 197, 190, 1);
+  position:fixed;
+  bottom:-25px;
+  left:-10px;
+  right:-10px;
+  
+}
+figure{width:200px;height:60px;cursor:pointer;perspective:500px;-webkit-perspective:500px;}
+figure div{height:100%;transform-style:preserve-3d;-webkit-transform-style:preserve-3d;transition:0.25s;-webkit-transition:0.25s;display:block;}
+figure:hover div{transform:rotateX(-90deg);}
+span{width:100%;height:100%;position:absolute;box-sizing:border-box;border:5px solid black;font-family:'Source Sans Pro',sans-serif;line-height:50px;font-size:17pt;text-align:center;text-transform:uppercase;}
+span:nth-child(1){color:black;transform: translate3d(0, 0, 30px);-webkit-transform: translate3d(0, 0, 30px);}
+span:nth-child(2){color:black;background:white;transform: rotateX(90deg) translate3d(0, 0, 30px);-webkit-transform: rotateX(90deg) translate3d(0, 0, 30px);}
+.hoverbutton {
+  width:250px;
+  position:absolute;
+  bottom:50px;
+  left:40%;
+  display:block;
+}
